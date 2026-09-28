@@ -1,0 +1,25 @@
+@model Lab13_TagHelpers.Models.RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Registration Form</h2>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:green">@ViewBag.Message</p>
+}
+
+<form asp-controller="Register" asp-action="Submit" method="post">
+    <label asp-for="Name">Name:</label>
+    <input asp-for="Name" /><br /><br />
+
+    <label asp-for="Email">Email:</label>
+    <input asp-for="Email" /><br /><br />
+
+    <label asp-for="Password">Password:</label>
+    <input asp-for="Password" type="password" /><br /><br />
+
+    <button type="submit">Register</button>
+</form>

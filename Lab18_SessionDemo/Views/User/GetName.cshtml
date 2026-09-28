@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome Back!</h2>
+
+<p>Your saved name is: <b>@ViewBag.UserName</b></p>
+
+<a asp-controller="User" asp-action="SetName">Change Name</a>

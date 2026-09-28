@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="Lab10_Async/Lab10_Async.csproj" />
+  <Project Path="Lab2_ShapeArea/Lab2_ShapeArea.csproj" />
+  <Project Path="Lab3_Indexer/Lab3_Indexer.csproj" />
+  <Project Path="lab4_genericStack/lab4_genericStack.csproj" />
+  <Project Path="lab5_AbstractClass/lab5_AbstractClass.csproj" />
+  <Project Path="Lab6_Interface/Lab6_Interface.csproj" />
+  <Project Path="Lab7_Delegates/Lab7_Delegates.csproj" />
+  <Project Path="lab8_LINQ/lab8_LINQ.csproj" />
+  <Project Path="lab9_FileIO/lab9_FileIO.csproj" />
+</Solution>

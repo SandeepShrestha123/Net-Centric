@@ -1,0 +1,44 @@
+@model Lab14_EmployeeValidation.Models.Employee
+
+@{
+    ViewData["Title"] = "Employee Registration";
+}
+<h2>Employee Registration Form</h2>
+@if (ViewBag.Message != null)
+{
+    <p style="color:green; font-weight:bold">@ViewBag.Message</p>
+}
+
+<form asp-controller="Employee" asp-action="Index" method="post" style="max-width:400px">
+
+    <div style="margin-bottom:15px">
+        <label asp-for="Name" style="display:block; font-weight:bold"></label>
+        <input asp-for="Name" class="form-control" style="width:100%; padding:6px" />
+        <span asp-validation-for="Name" style="color:red"></span>
+    </div>
+
+    <div style="margin-bottom:15px">
+        <label asp-for="Age" style="display:block; font-weight:bold"></label>
+        <input asp-for="Age" class="form-control" style="width:100%; padding:6px" />
+        <span asp-validation-for="Age" style="color:red"></span>
+    </div>
+
+    <div style="margin-bottom:15px">
+        <label asp-for="Email" style="display:block; font-weight:bold"></label>
+        <input asp-for="Email" class="form-control" style="width:100%; padding:6px" />
+        <span asp-validation-for="Email" style="color:red"></span>
+    </div>
+
+    <div style="margin-bottom:15px">
+        <label asp-for="Salary" style="display:block; font-weight:bold"></label>
+        <input asp-for="Salary" class="form-control" style="width:100%; padding:6px" />
+        <span asp-validation-for="Salary" style="color:red"></span>
+    </div>
+
+    <button type="submit" style="padding:8px 20px">Submit</button>
+
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
